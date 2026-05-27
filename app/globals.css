@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Background */
+  --bg-void: #000018;
+  --bg-deeper: #000030;
+  --bg-surface: #101030;
+  --bg-elevated: #181848;
+
+  /* Gold palette */
+  --gold-warm: #f0c060;
+  --gold-primary: #d8a848;
+  --gold-burnished: #c09048;
+  --gold-deep: #786030;
+
+  /* Text */
+  --text-primary: #f0f0f0;
+  --text-heading: #c09048;
+  --text-muted: #786048;
+
+  /* Glow accents */
+  --glow-starlight: #6090c0;
+  --glow-nebula: #a878d8;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 96px;
+
+  /* Layout */
+  --container-max: 1440px;
+  --gutter-desktop: 64px;
+  --gutter-tablet: 40px;
+  --gutter-mobile: 20px;
+
+  /* Frame */
+  --card-radius: 4px;
+  --frame-thickness: 1.5px;
+
+  /* Nav height */
+  --nav-h-desktop: 64px;
+  --nav-h-mobile: 56px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background: var(--bg-void);
+  color: var(--text-primary);
+  margin: 0; padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Locale-aware font stacks */
+body.locale-th {
+  font-family: var(--font-plex-thai), var(--font-inter), system-ui, sans-serif;
+}
+body.locale-en {
+  font-family: var(--font-inter), var(--font-plex-thai), system-ui, sans-serif;
+}
+body { /* default */
+  font-family: var(--font-plex-thai), var(--font-inter), system-ui, sans-serif;
+}
+
+/* Visible focus ring for keyboard users */
+:focus-visible {
+  outline: 2px solid var(--gold-warm);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+button:focus-visible,
+a:focus-visible {
+  outline-offset: 3px;
+}
+
+/* Reduced motion: kill continuous loops */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
