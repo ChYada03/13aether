@@ -5,7 +5,6 @@ import { useLocale } from "@/lib/i18n/LocaleContext";
 import { ZodiacOrbitRing } from "./ZodiacOrbitRing";
 import { useReducedMotion, useIsTabletUp } from "@/lib/utils/media-query";
 import { Icon } from "@/components/ui/IconSprite";
-import { glowPulseAnimate, glowPulseTransition } from "@/lib/animation/motion-presets";
 
 export function HeroSection() {
   const { t } = useLocale();

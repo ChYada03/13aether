@@ -8,15 +8,6 @@ import { useIsTabletUp, useReducedMotion } from "@/lib/utils/media-query";
 import { ZODIAC_IMAGE_INDEX } from "@/lib/utils/constants";
 import { cn } from "@/lib/utils/cn";
 
-const FACTION_DOT: Record<Character["faction"], string> = {
-  "government-public": "#4488cc",
-  "government-secret": "#aa44cc",
-  "hidden-council": "#cc8844",
-  infiltrator: "#7aa890",
-  rebel: "#c87878",
-  civilian: "#888888",
-};
-
 interface Props {
   character: Character;
   onOpenDetail: (id: Character["id"]) => void;
