@@ -49,8 +49,8 @@ export const uiStrings: UIStrings = {
   "modal.externalLink": { th: "ดูที่ whif.io", en: "Open on whif.io" },
 
   "footer.credits": {
-    th: "Crafted for Vitheaon · 2025 · whif.io",
-    en: "Crafted for Vitheaon · 2025 · whif.io",
+    th: "Crafted for 13aether · 2026 · whif.io",
+    en: "Crafted for 13aether · 2026 · whif.io",
   },
   "loading.alt": { th: "กำลังโหลด Vitheaon", en: "Loading Vitheaon" },
 };
