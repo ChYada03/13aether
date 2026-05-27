@@ -60,9 +60,9 @@ export const ZODIAC_IMAGE_INDEX: Record<ZodiacKey, number> = {
   virgo: 6,
   libra: 7,
   scorpio: 8,
-  sagittarius: 10,
-  capricorn: 11,
-  aquarius: 9,
+  sagittarius: 11,
+  capricorn: 9,
+  aquarius: 10,
   pisces: 12,
   ophiuchus: 13,
 };
